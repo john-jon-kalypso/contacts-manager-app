@@ -6,21 +6,26 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ContactsRunner {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
-        Path filepath = Paths.get("contacts.txt");
+//        Path filepath = Paths.get("contacts.txt");
 //        Files.createFile(filepath);
 
-        List<String> contacts = Arrays.asList(
-                "Alex Smith, 0001234567",
-                "Bernard Davis, 1234567890",
-                "Charlie Rodriguez, 9871234848",
-                "Denise Lesley, 1357908642",
-                "Edwardo Espinoza, 0157292984",
-                "Fredrick Chap, 451231290",
-                "Gregory Cook, 1239873456"
-        );
-        Files.write(filepath, contacts);
+//        List<String> contacts = Arrays.asList(
+//                "Alex Smith | 0001234567",
+//                "Bernard Davis | 1234567890",
+//                "Charlie Rodriguez | 9871234848",
+//                "Denise Lesley | 1357908642",
+//                "Edwardo Espinoza | 0157292984",
+//                "Fredrick Chap | 451231290",
+//                "Gregory Cook | 1239873456"
+//        );
+//        Files.write(filepath, contacts);
 
+//        for (String contact: contacts) {
+//            System.out.println(contact);
+//        }
+
+        new ContactsMenu();
     }
 }
