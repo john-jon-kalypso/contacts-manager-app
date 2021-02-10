@@ -11,7 +11,7 @@ public class ContactsMenu {
 
     public ContactsMenu() throws IOException, InterruptedException {
 //        Scanner scan = new Scanner(System.in);
-        Path filepath = Paths.get("contacts.txt");
+        Path filepath = Paths.get("data","contacts.txt");
         boolean valid = false;
 
         List<String> contacts = Files.readAllLines(filepath);
@@ -40,7 +40,7 @@ public class ContactsMenu {
             } else if (menuNumber == 2) {
                 System.out.println("Add a new contact?");
             } else if (menuNumber == 3) {
-                Files.write(Paths.get("src", "contacts.txt"), Arrays.asList("3"), StandardOpenOption.APPEND);
+                Files.write(Paths.get("data", "contacts.txt"), Arrays.asList("3"), StandardOpenOption.APPEND);
             } else if (menuNumber == 4) {
                 System.out.println("Delete contact?");
             } else {
